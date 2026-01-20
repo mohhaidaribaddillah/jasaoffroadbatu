@@ -1,0 +1,18 @@
+# Konfigurasi robots.txt untuk https://jasaoffroadbatu.vercel.app/
+# Dibuat untuk memaksimalkan indexing SEO pada Google & Bing
+
+User-agent: *
+Allow: /
+
+# Mencegah bot meng-crawl folder sistem/admin (Best Practice keamanan)
+Disallow: /admin/
+Disallow: /private/
+Disallow: /tmp/
+Disallow: /cgi-bin/
+
+# Mencegah bot mengindex file asset mentah jika tidak diinginkan (Opsional)
+# Disallow: /assets/css/
+# Disallow: /assets/js/
+
+# Lokasi Sitemap (Sangat Penting untuk SEO)
+Sitemap: https://jasaoffroadbatu.vercel.app/sitemap.xml
